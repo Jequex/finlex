@@ -1,18 +1,126 @@
 <div class="container-fluid m-2 app">
-  <div class="row mb-2">
-    <div class="col-md-10">Lorem Ipsum Dolor Sit Amet</div>
-    <div class="col-md-2">
+  <div class="row m-2">
+    <div class="col-9">Lorem Ipsum Dolor Sit Amet</div>
+    <div class="col-3 text-end">
       <div class="row">
-        <div class="col"><button class="btn btn-sm btn-danger">Lorem Ipsum</button></div>
-        <div class="col"><button class="btn btn-sm btn-secondary">Lorem Ipsum</button></div>
+        <div class="col">
+          <button class="btn btn-lg btn-outline-danger">Lorem Ipsum</button>
+        </div>
+        <div class="col">
+          <button class="btn btn-lg btn-secondary">Lorem Ipsum</button>
+        </div>
       </div>
     </div>
   </div>
 
 
   <div class="row">
-    <div class="col-md-3"><app-sidebar></app-sidebar></div>
-    <div class="col-md-9"><app-main></app-main></div>
+    <div class="col-sm-12 col-lg-3">
+      <div class="card border border-secondary bg-white p-2 m-2">
+        <div class="d-flex justify-content-between">
+          <p>Lorem Ipsum</p>
+          <i class="bi-pencil-fill text-danger"></i>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col border-end">
+            <p class="m-0"><small>Lorem Ipsum</small></p>
+            <p class="m-0"><span class="px-1"><i class="bi-pencil text-danger"></i></span><small>Lorem Ipsum</small></p>
+          </div>
+          <div class="col border-start">
+            <p class="m-0"><small>Lorem Ipsum</small></p>
+            <p class="m-0"><span class="px-1"><i class="bi-shield-shaded text-dark"></i></span><small>Lorem Ipsum</small></p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col border-end">
+            <p class="m-0"><small>Lorem Ipsum</small></p>
+            <p class="m-0"><span class="px-1"><i class="bi-cash text-dark"></i></span><small>Lorem</small></p>
+          </div>
+          <div class="col border-start">
+            <p class="m-0"><small>Lorem Ipsum</small></p>
+            <p class="m-0"><span class="px-1"><i class="bi-cash text-dark"></i></span><small>000.000,00</small></p>
+          </div>
+        </div>
+        <hr/>
+      </div>
+      <div class="card border border-secondary bg-white p-2 m-2">
+        <div class="d-flex justify-content-between">
+          <p>Lorem Ipsum</p>
+          <i class="bi-pencil-fill text-danger"></i>
+        </div>
+        <hr/>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                <div class="text-warning mx-2 p-2">8</div><span>Lorem Ipsum</span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem Ipsum
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <div class="text-danger mx-2 p-2">2</div><span>Lorem Ipsum</span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem Ipsum
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="text-success mx-2 p-2">0</div><span>Lorem Ipsum</span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                 data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem Ipsum
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="card p-2 text-danger border border-danger">Lorem Ipsum</div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-lg-9">
+      <div class="row">
+        <div class="col card border border-secondary p-1 m-2">
+          <div>&euro;0.000.000,00</div>
+          <div>Lorem Ipsum Dolor Sit Amet</div>
+        </div>
+        <div class="col card border border-secondary p-1 m-2">
+          <div>&euro;0.000.000,00</div>
+          <div>Lorem Ipsum Dolor Sit Amet</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-15 col-md-4 col-sm-12 p-2 m-2 card border border-secondary" *ngFor="let item of items">
+          <div class="p-2 card bg-dark text-white d-flex align-items-center justify-content-center" style="width: 20%"><i [ngClass]="item.logo"></i></div>
+          <div class="mb-4 mt-1 text-secondary">{{item.name}}</div>
+          <div>
+            <small>{{item.text}}</small>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
