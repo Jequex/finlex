@@ -4,10 +4,10 @@
     <div class="col-3 text-end">
       <div class="row">
         <div class="col">
-          <button class="btn btn-lg btn-outline-danger">Lorem Ipsum</button>
+          <button class="btn btn-lg btn-outline-danger" (click)="setTheme('light')">Lorem Ipsum</button>
         </div>
         <div class="col">
-          <button class="btn btn-lg btn-secondary">Lorem Ipsum</button>
+          <button class="btn btn-lg btn-secondary" (click)="setTheme('dark')">Lorem Ipsum</button>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
 
   <div class="row">
     <div class="col-sm-12 col-lg-3">
-      <div class="card border border-secondary bg-white p-2 m-2">
+      <div class="card border border-secondary p-2 m-2">
         <div class="d-flex justify-content-between">
           <p>Lorem Ipsum</p>
           <i class="bi-pencil-fill text-danger"></i>
@@ -45,7 +45,7 @@
         </div>
         <hr/>
       </div>
-      <div class="card border border-secondary bg-white p-2 m-2">
+      <div class="card border border-secondary p-2 m-2">
         <div class="d-flex justify-content-between">
           <p>Lorem Ipsum</p>
           <i class="bi-pencil-fill text-danger"></i>
@@ -81,7 +81,7 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
+            <h2 class="accordion-header bg-white" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <div class="text-success mx-2 p-2">0</div><span>Lorem Ipsum</span>

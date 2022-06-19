@@ -1,9 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
-$danger: #fd6f52;
+:root{
+  --light: #eeeeee;
+  --danger: #ff0000;
+  --secondary: #7e7e7e;
+  --dark: #000000;
+  --white: #ffffff;
+}
 
-@import "bootstrap/scss/bootstrap";
+.btn-outline-danger{
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-secondary{
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+.text-white{
+  color: var(--white);
+}
+
+.card{
+  background-color: var(--white);
+}
+
+.text-danger{
+  color: var(--danger);
+}
+
+.bg-white{
+  background-color: var(--light);
+}
+
+.bg-dark{
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.accordion > .accordion-header {
+  background-color: var(--light);
+}
+
+@import "bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-body{
-  background-color: #eceae0;
+body {
+  background-color: var(--light);
+  color: var(--dark);
 }
