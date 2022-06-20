@@ -38,8 +38,8 @@
   color: var(--light);
 }
 
-.accordion > .accordion-header {
-  background-color: var(--light);
+.accordion {
+  background-color: var(--light) !important;
 }
 
 @import "bootstrap/dist/css/bootstrap.min.css";

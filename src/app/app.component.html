@@ -75,7 +75,7 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
                  data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+              <div class="accordion-body text-dark">
                 Lorem Ipsum
               </div>
             </div>
@@ -112,7 +112,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-15 col-md-4 col-sm-12 p-2 m-2 card border border-secondary" *ngFor="let item of items">
+        <div class="col-lg-15 col-md-4 col-sm-12 p-2 m-2 card border border-secondary" style="width: 200px" *ngFor="let item of items">
           <div class="p-2 card bg-dark text-white d-flex align-items-center justify-content-center" style="width: 20%"><i [ngClass]="item.logo"></i></div>
           <div class="mb-4 mt-1 text-secondary">{{item.name}}</div>
           <div>
